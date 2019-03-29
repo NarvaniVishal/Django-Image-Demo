@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Display</title>
+</head>
+<body>
+<h1> Student Images</h1>
+{% for singleStu in data %}
+
+<h3>  {{singleStu.name}}  </h3>
+
+<img src={{singleStu.stu_img.url}} width=200px height=200px>
+{% endfor %}
+</body>
+</html>
